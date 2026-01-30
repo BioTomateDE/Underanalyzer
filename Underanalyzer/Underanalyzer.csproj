@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <PackageId>UnderminersTeam.Underanalyzer</PackageId>
+        <AssemblyName>Underanalyzer</AssemblyName>
         <Version>0.1.0</Version>
         <Authors>colinator27</Authors>
         <Product>Underanalyzer</Product>
@@ -14,9 +15,14 @@
             scope, with its own lifecycle.
         </Description>
         <PackageTags>GameMaker;GML;Gamemaker Language;Undertale;Deltarune;UndertaleModTool</PackageTags>
-        <PackageProjectUrl>https://github.com/UnderminersTeam/Underanalyzer</PackageProjectUrl>
-        <PackageLicenceExpression>MPL-2.0</PackageLicenceExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/UnderminersTeam/Underanalyzer</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.1;net10.0</TargetFrameworks>
